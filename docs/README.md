@@ -20,3 +20,5 @@
 - 后端：Flask
 - 数据库：MySQL
 - 大模型：DeepSeek-R1:1.5B
+
+- <img width="865" height="982" alt="image" src="https://github.com/user-attachments/assets/a89485e8-a4b1-458b-a45c-bc1a59bd3cfc" />
