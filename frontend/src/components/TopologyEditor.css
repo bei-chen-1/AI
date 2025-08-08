@@ -1,0 +1,98 @@
+.topology-editor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.editor-controls {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.editor-controls textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.editor-controls textarea:focus {
+    outline: none;
+    border-color: #00c9ff;
+    box-shadow: 0 0 0 2px rgba(0, 201, 255, 0.3);
+}
+
+.editor-controls button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, var(--accent), #92fe9d);
+    color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-end;
+}
+
+.editor-controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.editor-canvas {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.device {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.device:hover {
+    filter: drop-shadow(0 0 8px rgba(0, 201, 255, 0.5));
+}
+
+.device.selected {
+    filter: drop-shadow(0 0 12px rgba(0, 201, 255, 0.8));
+}
+
+.device text {
+    user-select: none;
+}
+
+.connection line {
+    stroke-linecap: round;
+}
+
+.device-details {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    border-left: 3px solid #00c9ff;
+}
+
+.device-details h4 {
+    margin-bottom: 10px;
+    color: #00c9ff;
+}
+
+.device-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}

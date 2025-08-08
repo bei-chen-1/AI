@@ -1,0 +1,146 @@
+/* 文件：frontend/src/styles/TopologyEditorPage.css */
+
+.topology-editor {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e0eafc 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #6e56cf;
+  color: white;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.editor-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #f8f9fb;
+  border-bottom: 1px solid #ddd;
+}
+
+.desc-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.btn-generate,
+.btn-export {
+  display: flex;
+  align-items: center;
+  background-color: #6e56cf;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-generate:hover,
+.btn-export:hover {
+  background-color: #5a47ba;
+}
+
+/* =============== 新增：主容器布局 =============== */
+
+.main-content {
+  flex: 1;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 左侧边栏容器 */
+.sidebar {
+  width: 180px;
+  background-color: #f4f2ff;
+  color: #333;
+  border-right: 1px solid #d4ccf2;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  left: -160px; /* 初始隐藏，只露出一部分 */
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar:hover {
+  left: 0;
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6e56cf;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.device-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  cursor: grab;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.device-item:hover {
+  background-color: #f0eeff;
+}
+
+/* 拓扑图区域样式 */
+.topology-canvas {
+  flex: 1;
+  margin-left: 20px;
+  position: relative;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+/* GoJS 容器 */
+.gojs-diagram {
+  width: 100%;
+  height: 100%;
+}
+
+/* 初始空白提示 */
+.placeholder {
+  color: #888;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafbff;
+}
