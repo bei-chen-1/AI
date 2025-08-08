@@ -95,6 +95,8 @@
 
 ## 流程图
 - <img width="865" height="982" alt="image" src="https://github.com/user-attachments/assets/a89485e8-a4b1-458b-a45c-bc1a59bd3cfc" />
+- Web 前端(React) ——> Flask 后端(Python) ——> Ollama 模型(DeepSeek)
+- MySQL 知识库(题目/答案) <——> Flask 后端(Python)
 
 ## 完整数据流路径（用户请求 → 判题结果）
 - （1）用户发起请求
