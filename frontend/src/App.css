@@ -1,0 +1,446 @@
+/* src/App.css */
+:root {
+  --primary: #1a2a6c;
+  --secondary: #b21f1f;
+  --accent: #00c9ff;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --gradient-start: #1a2a6c;
+  --gradient-middle: #b21f1f;
+  --gradient-end: #1a2a6c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+  color: white;
+  min-height: 100vh;
+  line-height: 1.6;
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-deep {
+  color: #00c9ff;
+  text-shadow: 0 0 15px rgba(0, 201, 255, 0.7);
+}
+
+.logo-seek {
+  color: #92fe9d;
+  text-shadow: 0 0 15px rgba(146, 254, 157, 0.7);
+  margin: 0 0.5rem;
+}
+
+.logo-edu {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+}
+
+.control-panel {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.subject-selector {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+}
+
+.subject-selector label {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+select, button {
+  padding: 1rem 1.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select {
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 1.2rem;
+}
+
+select:focus {
+  outline: none;
+  border-color: #00c9ff;
+  box-shadow: 0 0 0 2px rgba(0, 201, 255, 0.3);
+}
+
+button {
+  background: linear-gradient(90deg, var(--accent), #92fe9d);
+  color: var(--primary);
+  font-weight: 600;
+  display: block;
+  width: 100%;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.question-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  flex: 2;
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.subject-tag {
+  background: linear-gradient(90deg, var(--accent), #92fe9d);
+  color: var(--primary);
+  padding: 0.4rem 1rem;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.question-content {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer-section {
+  margin: 1.8rem 0;
+}
+
+.answer-section h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 0.8rem 0 1.5rem;
+  resize: vertical;
+  min-height: 140px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #00c9ff;
+  box-shadow: 0 0 0 2px rgba(0, 201, 255, 0.3);
+}
+
+.submit-btn {
+  background: linear-gradient(90deg, #ff8a00, #ff0080);
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.result-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.result-box h3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  color: #92fe9d;
+}
+
+.result-content {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #92fe9d;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+}
+
+.history-panel {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  flex: 1;
+  max-width: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-panel h3 {
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.3rem;
+}
+
+.history-list {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 65vh;
+  padding-right: 0.5rem;
+}
+
+.history-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.history-list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.history-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.history-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.history-item:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transform: translateX(5px);
+}
+
+.history-item.active {
+  border-left: 4px solid var(--accent);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.history-subject {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #92fe9d;
+  margin-bottom: 0.4rem;
+}
+
+.history-question {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.history-time {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer {
+  text-align: center;
+  padding: 1.8rem 0;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 响应式布局 */
+@media (max-width: 992px) {
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .history-panel {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .logo-edu {
+    font-size: 1.5rem;
+  }
+  
+  .control-panel,
+  .question-box,
+  .result-box,
+  .history-panel {
+    padding: 1.5rem;
+  }
+  
+  .question-content,
+  .result-content {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .logo-edu {
+    margin-left: 0;
+  }
+  
+  select, button {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* API 状态指示器 */
+.api-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.api-status.pending {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.api-status.loading {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.api-status.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.api-status.error {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* API 状态容器 */
+.api-status-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.api-status.idle {
+  background-color: #6c757d;
+  color: white;
+}

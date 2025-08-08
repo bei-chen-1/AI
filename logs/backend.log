@@ -1,0 +1,32 @@
+nohup: ignoring input
+INFO:__main__:测试数据库连接...
+INFO:__main__:成功连接到 MySQL 数据库
+INFO:__main__:测试模型访问...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+INFO:__main__:模型测试响应: <think>
+
+</think>
+
+当然可以！不过，我需要一些具体的信息或问题来进一步了解你的测试...
+INFO:__main__:所有组件测试通过，启动应用...
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+前端构建路径: /opt/deepseek-app/backend/../frontend/build
+路径是否存在: True
+index.html 是否存在: True
+
+=== 注册的路由 ===
+GET, HEAD, OPTIONS: /static/<path:filename>
+GET, HEAD, OPTIONS: /
+GET, HEAD, OPTIONS: /favicon.ico
+GET, HEAD, OPTIONS: /api/subjects
+POST, OPTIONS: /api/generate
+POST, OPTIONS: /api/judge
+GET, HEAD, OPTIONS: /health
+GET, HEAD, OPTIONS: /
+GET, HEAD, OPTIONS: /<path:path>
+=================
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+Address already in use
+Port 5001 is in use by another program. Either identify and stop that program, or start the server with a different port.

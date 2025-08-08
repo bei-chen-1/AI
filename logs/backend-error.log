@@ -1,0 +1,64 @@
+[2025-05-31 15:40:47 +0800] [31029] [INFO] Starting gunicorn 23.0.0
+[2025-05-31 15:40:47 +0800] [31029] [INFO] Listening at: http://0.0.0.0:5000 (31029)
+[2025-05-31 15:40:47 +0800] [31029] [INFO] Using worker: sync
+[2025-05-31 15:40:47 +0800] [31031] [INFO] Booting worker with pid: 31031
+[2025-05-31 16:04:35 +0800] [31975] [INFO] Starting gunicorn 23.0.0
+[2025-05-31 16:04:35 +0800] [31975] [INFO] Listening at: http://0.0.0.0:5000 (31975)
+[2025-05-31 16:04:35 +0800] [31975] [INFO] Using worker: sync
+[2025-05-31 16:04:35 +0800] [31977] [INFO] Booting worker with pid: 31977
+[2025-05-31 16:18:36 +0800] [31977] [INFO] Worker exiting (pid: 31977)
+[2025-05-31 16:18:36 +0800] [31975] [INFO] Handling signal: term
+[2025-05-31 16:18:36 +0800] [31975] [ERROR] Worker (pid:31977) was sent SIGTERM!
+[2025-05-31 16:18:36 +0800] [31975] [INFO] Shutting down: Master
+[2025-05-31 19:48:50 +0800] [51831] [INFO] Starting gunicorn 23.0.0
+[2025-05-31 19:48:50 +0800] [51831] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 19:48:50 +0800] [51831] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 19:48:51 +0800] [51831] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 19:48:51 +0800] [51831] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 19:48:52 +0800] [51831] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 19:48:52 +0800] [51831] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 19:48:53 +0800] [51831] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 19:48:53 +0800] [51831] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 19:48:54 +0800] [51831] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 19:48:54 +0800] [51831] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 19:48:55 +0800] [51831] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2025-05-31 20:02:06 +0800] [51911] [INFO] Starting gunicorn 23.0.0
+[2025-05-31 20:02:06 +0800] [51911] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 20:02:06 +0800] [51911] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 20:02:07 +0800] [51911] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 20:02:07 +0800] [51911] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 20:02:08 +0800] [51911] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 20:02:08 +0800] [51911] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 20:02:09 +0800] [51911] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 20:02:09 +0800] [51911] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 20:02:10 +0800] [51911] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-05-31 20:02:10 +0800] [51911] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 98] Address already in use
+[2025-05-31 20:02:11 +0800] [51911] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2025-05-31 20:14:16 +0800] [52342] [INFO] Starting gunicorn 23.0.0
+[2025-05-31 20:14:16 +0800] [52342] [INFO] Listening at: http://0.0.0.0:5000 (52342)
+[2025-05-31 20:14:16 +0800] [52342] [INFO] Using worker: sync
+[2025-05-31 20:14:16 +0800] [52344] [INFO] Booting worker with pid: 52344
+[2025-05-31 20:28:14 +0800] [54098] [INFO] Starting gunicorn 23.0.0
+[2025-05-31 20:28:14 +0800] [54098] [INFO] Listening at: http://0.0.0.0:5001 (54098)
+[2025-05-31 20:28:14 +0800] [54098] [INFO] Using worker: sync
+[2025-05-31 20:28:14 +0800] [54100] [INFO] Booting worker with pid: 54100
+[2025-05-31 20:36:24 +0800] [54258] [INFO] Starting gunicorn 23.0.0
+[2025-05-31 20:36:24 +0800] [54258] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2025-05-31 20:36:24 +0800] [54258] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2025-05-31 20:36:25 +0800] [54258] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2025-05-31 20:36:25 +0800] [54258] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2025-05-31 20:36:26 +0800] [54258] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2025-05-31 20:36:26 +0800] [54258] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2025-05-31 20:36:27 +0800] [54258] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2025-05-31 20:36:27 +0800] [54258] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2025-05-31 20:36:28 +0800] [54258] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2025-05-31 20:36:28 +0800] [54258] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2025-05-31 20:36:29 +0800] [54258] [ERROR] Can't connect to ('0.0.0.0', 5001)
+[2025-05-31 20:36:45 +0800] [54098] [ERROR] Worker (pid:54100) was sent SIGHUP!
+[2025-05-31 20:36:46 +0800] [54098] [INFO] Handling signal: hup
+[2025-05-31 20:36:46 +0800] [54098] [INFO] Hang up: Master
+[2025-05-31 20:36:46 +0800] [54269] [INFO] Booting worker with pid: 54269
+[2025-05-31 20:36:46 +0800] [54283] [INFO] Booting worker with pid: 54283
+[2025-05-31 20:36:46 +0800] [54098] [INFO] Handling signal: term
+[2025-05-31 20:36:47 +0800] [54269] [INFO] Worker exiting (pid: 54269)
+[2025-05-31 20:37:16 +0800] [54098] [INFO] Shutting down: Master

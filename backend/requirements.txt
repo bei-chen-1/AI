@@ -1,0 +1,5 @@
+flask
+ollama
+mysql-connector-python
+gunicorn
+flask-cors
