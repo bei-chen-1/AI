@@ -22,7 +22,7 @@
 - 大模型：DeepSeek-R1:1.5B
 
 ## 项目目录
-- /opt/deepseek-app
+- /opt/deepseek-app-1.0
 - ├── backend/      # Flask 后端
 - ├── docs/         # 文档
 - ├── frontend/     # React 前端
@@ -30,7 +30,7 @@
 - ├── logs/         # 日志目录
 
 ## 详细目录
-- /opt/deepseek-app
+- /opt/deepseek-app-1.0
 - ├── backend/                   # Flask 后端服务
 - │   ├── app.py                # 后端主应用（Flask）
 - │   └── requirements.txt      # Python 依赖列表
