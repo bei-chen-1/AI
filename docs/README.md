@@ -1,4 +1,4 @@
-# DeepSeek-app-2.0 学习助手部署指南
+# DeepSeek-app-2.0 智能考试系统部署指南
 
 ## 系统要求
 - CentOS 7.9
