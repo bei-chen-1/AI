@@ -16,6 +16,11 @@
 - 前端：http://服务器IP:3000
 - 后端API：http://服务器IP:5001/api/subjects
 
+## 项目网盘
+- 主链接：https://www.123684.com/s/kPEvTd-0K7d3提取码:podL
+- 备用链接：https://www.123912.com/s/kPEvTd-0K7d3提取码:podL
+- 二维码：<img width="102" height="102" alt="edde2f79be024236e80c6cb3525a2c5" src="https://github.com/user-attachments/assets/593f7d51-d1a0-449d-9013-209e2b08be80" />
+
 ## 系统架构
 - 前端：React
 - 后端：Flask
